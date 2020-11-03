@@ -74,7 +74,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_juice
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
-    androidboot.console=ttyMSM0 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
     swiotlb=2048 \
