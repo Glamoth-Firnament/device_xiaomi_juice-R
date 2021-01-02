@@ -100,6 +100,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
@@ -172,4 +173,6 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    NotchBarKiller
+    NotchBarKiller \
+    SettingsLibOverlayJuice \
+    SystemUIOverlayJuice
