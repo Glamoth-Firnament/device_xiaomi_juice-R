@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     android.hardware.sensors@2.0-service.multihal
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
