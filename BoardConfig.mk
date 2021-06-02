@@ -101,8 +101,6 @@ TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
-    console=ttyMSM0,115200n8 \
-    earlycon=msm_geni_serial,0x4a90000 \
     androidboot.hardware=qcom \
     androidboot.console=ttyMSM0 \
     lpm_levels.sleep_disabled=1 \
