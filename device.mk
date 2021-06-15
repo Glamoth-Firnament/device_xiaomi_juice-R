@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
 
+# Google Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+    
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
