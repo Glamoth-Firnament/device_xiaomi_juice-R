@@ -60,7 +60,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# GalleryGo
+# Google Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
+# GalleryGo  
 PRODUCT_PACKAGES += \
     GalleryGo
 
