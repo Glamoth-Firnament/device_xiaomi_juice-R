@@ -22,7 +22,13 @@
   <!-- Device specific doze package -->
   <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
 
- <!-- Battery Health -->
+<!-- Battery Health -->
+    <bool name="config_supportBatteryHealth">true</bool>
+
+<!-- Battery Charging cycle counts -->
+    <bool name="config_showChargingCycles">true</bool>
+
+<!-- Battery Health -->
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
