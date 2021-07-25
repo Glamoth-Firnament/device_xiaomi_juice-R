@@ -12,6 +12,9 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 
+#Build
+SPARK_BUILD_TYPE := OFFICIAL
+
 #Maintainer
 PRODUCT_PRODUCT_PROPERTIES += \
    ro.spark.maintainer=JoemarTaroy \
