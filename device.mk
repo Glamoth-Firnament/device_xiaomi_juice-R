@@ -174,3 +174,7 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiResCommon \
     NotchBarKiller
+
+# WPA supplicant
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/manifest.xml
