@@ -178,3 +178,7 @@ PRODUCT_PACKAGES += \
 # WPA supplicant
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/manifest.xml
+
+# Hostapd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
