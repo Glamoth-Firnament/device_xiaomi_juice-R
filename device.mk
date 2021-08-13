@@ -128,7 +128,8 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
-    init.target.rc
+    init.target.rc \
+    init.performance_level.rc
 
 # Input
 PRODUCT_COPY_FILES += \
