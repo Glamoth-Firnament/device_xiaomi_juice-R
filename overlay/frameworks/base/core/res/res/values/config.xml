@@ -935,4 +935,7 @@
     <!-- Hide the vendor mismatch dialog -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
 
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Xiaomi-Juice</string>
+
 </resources>
