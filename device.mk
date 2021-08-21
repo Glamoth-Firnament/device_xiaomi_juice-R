@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# GalleryGo
+PRODUCT_PACKAGES += \
+    GalleryGo
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
