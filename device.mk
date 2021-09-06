@@ -56,10 +56,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BluetoothQti
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Google Camera
 PRODUCT_PACKAGES += \
     GoogleCameraGo
