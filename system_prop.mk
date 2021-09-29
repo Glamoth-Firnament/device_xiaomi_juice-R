@@ -46,6 +46,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.downgrade_pressure=100 \
     ro.lmk.swap_free_low_percentage=20 
 
+# Netflix custom property
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.netflix.bsp_rev=Q6115-31409-1
+
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.mark_idle_delay_mins=60 \
