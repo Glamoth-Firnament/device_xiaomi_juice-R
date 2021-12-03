@@ -15,6 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiagl \
     debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true \
     debug.sf.latch_unsignaled=0 \
     debug.sdm.support_writeback=0 \
     debug.enable.sglscale=1 \
