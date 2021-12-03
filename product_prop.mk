@@ -14,6 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
     debug.sf.latch_unsignaled=0 \
     debug.sdm.support_writeback=0 \
     debug.enable.sglscale=1 \
