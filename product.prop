@@ -2,9 +2,7 @@
 ro.apex.updatable=false
 
 # Graphics
-debug.hwui.renderer=skiagl
-debug.renderengine.backend=skiaglthreaded
-renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=opengl
 debug.sf.hw=0
 debug.sf.latch_unsignaled=0
 debug.sf.disable_backpressure=1
