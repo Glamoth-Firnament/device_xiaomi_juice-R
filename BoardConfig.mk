@@ -135,8 +135,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := gengkapak
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar LD=ld.lld NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
-
+TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar LD=ld.lld NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip \
+	HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+	
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
