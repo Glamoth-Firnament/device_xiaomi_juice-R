@@ -13,3 +13,6 @@
 # Vendor overlay
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?      u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/overlay(/.*)?    u:object_r:vendor_overlay_file:s0
+
+# Adaptive Charging
+/sys/class/power_supply/battery/input_suspend                                                                               u:object_r:vendor_sysfs_battery_supply:s0
