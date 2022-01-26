@@ -11,4 +11,4 @@ allow init vendor_overlay_file:dir mounton;
 allow init sysfs_graphics:file w_file_perms;
 
 # Adaptive charging
-allow init vendor_sysfs_battery_supply:file { setattr };
+allow init sysfs_battery_supply:file w_file_perms;
