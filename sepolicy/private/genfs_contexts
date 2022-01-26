@@ -1,5 +1,2 @@
 genfscon sysfs /module/battery_saver/parameters/enabled u:object_r:sysfs_battery_saver:s0
 genfscon sysfs /touchpanel u:object_r:sysfs_touchpanel:s0
-
-# Charger
-genfscon sysfs /sys/class/power_supply/battery/input_suspend    u:object_r:vendor_sysfs_battery_supply:s0
