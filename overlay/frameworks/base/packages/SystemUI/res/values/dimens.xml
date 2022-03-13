@@ -31,11 +31,21 @@
 */
 
 -->
-
 <resources>
 
     <!-- Adjust the icon padding in status bar for rounded corners --> 
+    <dimen name="rounded_corner_content_padding">28dp</dimen>
 
-    <dimen name="rounded_corner_content_padding">26px</dimen>
+    <!-- The padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">3dp</dimen>
+
+    <!-- The padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">3dp</dimen>
+
+   <!-- The padding on the top of the statusbar -->
+    <dimen name="status_bar_padding_top">8dp</dimen>
+
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">8dp</dimen>
 
 </resources>
