@@ -16,6 +16,7 @@ $(call inherit-product, vendor/aosp/common.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGER_IMAGES := true
+TARGET_SHIP_GCAM_GO := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
