@@ -173,6 +173,4 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    NotchBarKiller \
-    SettingsLibOverlayJuice \
-    SystemUIOverlayJuice
+    NotchBarKiller
