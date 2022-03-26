@@ -67,10 +67,6 @@ PRODUCT_PACKAGES += \
 
 # Google Camera
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
-# Google Camera
-PRODUCT_PACKAGES += \
     Gboard
 
 # Google Photos
