@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/juice/device.mk)
 $(call inherit-product, vendor/aosp/common.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-USE_PIXEL_CHARGING := true
+USE_PIXEL_CHARGER_IMAGES := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
