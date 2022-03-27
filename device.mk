@@ -66,8 +66,8 @@ PRODUCT_PACKAGES += \
     GalleryGo
 
 # Google Camera
-PRODUCT_PACKAGES += \
-    Gboard
+#PRODUCT_PACKAGES += \
+#    Gboard
 
 # Google Photos
 PRODUCT_COPY_FILES += \
