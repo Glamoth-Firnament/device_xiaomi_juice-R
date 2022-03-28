@@ -12,6 +12,9 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 # Inherit common.
 $(call inherit-product, vendor/carbon/config/common.mk)
 
+# Optional Lawnchair packages
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
