@@ -56,6 +56,9 @@ ro.netflix.bsp_rev=Q6115-31409-1
 # RIL
 persist.sys.fflag.override.settings_provider_model=false
 
+# Scroll optimization
+ro.vendor.perf.scroll_opt=true
+
 # System
 persist.sys.binary_xml=false
 
