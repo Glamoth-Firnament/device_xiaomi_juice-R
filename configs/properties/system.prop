@@ -37,6 +37,9 @@ ro.lmk.swap_free_low_percentage=20
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1
 
+# Qualcomm System Daemon
+persist.vendor.qcomsysd.enabled=0
+
 # Vendor
 persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.ssr.enable_ramdumps=1
