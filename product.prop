@@ -1,4 +1,4 @@
-# Apex
+k# Apex
 ro.apex.updatable=false
 
 # Graphics
@@ -22,10 +22,10 @@ ro.surface_flinger.has_wide_color_display=false
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
-# Blurs
-ro.surface_flinger.supports_background_blur=1
+# Blur
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
 
 # Power-saving props
 ro.vendor.use_data_netmgrd=true
@@ -64,7 +64,7 @@ persist.sys.fuse.passthrough.enable=true
 persist.sys.fuse.bpf.enable=false
 
 # Media
-ro.config.media_vol_steps=8
+ro.config.media_vol_steps=15
 vendor.audio.offload.buffer.size.kb=256
 vendor.audio_hal.period_size=240
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24

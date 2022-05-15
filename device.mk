@@ -61,10 +61,6 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     BluetoothQti
 
-# GalleryGo
-PRODUCT_PACKAGES += \
-    GalleryGo
-
 # Gboard
 PRODUCT_PACKAGES += \
     Gboard
