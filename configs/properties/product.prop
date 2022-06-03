@@ -79,3 +79,6 @@ persist.vendor.qti.telephony.vt_cam_interface=2
 
 # Service reschedule
 persist.sys.am.reschedule_service=true
+
+# Oem Unlock
+ro.oem_unlock_supported=0
