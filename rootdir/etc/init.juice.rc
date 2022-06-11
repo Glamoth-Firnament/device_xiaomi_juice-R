@@ -6,7 +6,7 @@ on boot
 on property:sys.boot_completed=1
     
     # Report max frequency to some tasks.
-    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so,libfb.so"
+    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,libunity.so,libfb.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
     # Restrict permissions to socket file
