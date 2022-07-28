@@ -64,7 +64,7 @@ persist.sys.fuse.passthrough.enable=true
 persist.sys.fuse.bpf.enable=false
 
 # Media
-ro.config.media_vol_steps=15
+ro.config.media_vol_steps=11
 vendor.audio.offload.buffer.size.kb=256
 vendor.audio_hal.period_size=240
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
