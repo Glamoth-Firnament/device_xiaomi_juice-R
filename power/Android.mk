@@ -19,6 +19,10 @@ LOCAL_SRC_FILES := power-common.c metadata-parser.c utils.c list.c hint-data.c p
 LOCAL_C_INCLUDES := external/libxml2/include \
                     external/icu/icu4c/source/common
 
+ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
+    LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
+endif
+
 ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
     LOCAL_CFLAGS += -DINTERACTION_BOOST
 endif
