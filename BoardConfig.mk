@@ -121,7 +121,7 @@ BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
 TARGET_KERNEL_SOURCE := kernel/xiaomi/juice
-TARGET_KERNEL_CONFIG := mistyx-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/juice-perf_defconfig
 KERNEL_LTO := full
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
@@ -132,7 +132,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # Kernel Toolchain
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r458507
+TARGET_KERNEL_CLANG_VERSION := mistyx
 TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1 \
 	HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
