@@ -46,6 +46,9 @@ TARGET_BOOTLOADER_BOARD_NAME := bengal
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Camera
+MALLOC_SVELTE_FOR_LIBC32 := true
+
 # Display
 TARGET_USES_HWC2 := true
 
