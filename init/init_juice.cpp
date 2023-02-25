@@ -72,8 +72,8 @@ void vendor_load_properties() {
         property_override(prop_name.c_str(), value.c_str(), false);
     };
     
-    property_override("ro.build.fingerprint", "google/sunfish/sunfish:11/RQ2A.210505.002/7246365:user/release-keys");
-    property_override("ro.build.description", "sunfish-user 11 RQ2A.210505.002 7246365 release-keys");
+    property_override("ro.build.fingerprint", "google/cheetah/cheetah:13/TQ1A.230205.002/9471150:user/release-keys");
+    property_override("ro.build.description", "cheetah-user 13 TQ1A.230205.002 9471150 release-keys");
 
     std::string region = GetProperty("ro.boot.hwc", "");
     std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
