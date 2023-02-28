@@ -121,7 +121,7 @@ BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
 TARGET_KERNEL_SOURCE := kernel/xiaomi/juice
-TARGET_KERNEL_CONFIG := mistyx_defconfig
+TARGET_KERNEL_CONFIG := vendor/chime-perf_defconfig
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
@@ -131,10 +131,8 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # Kernel Toolchain
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_ADDITIONAL_FLAGS += AR=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/llvm-ar \
-        AS=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/llvm-as \
-        LD=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/ld.lld \
+TARGET_KERNEL_CLANG_VERSION := xRageTC
+TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1 \
 	HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Metadata

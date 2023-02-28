@@ -6,18 +6,13 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Optional Lawnchair packages
-$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
-
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Bootanimation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2340
+# Inherit some common xdroid-CAF stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_juice
+PRODUCT_NAME := xdroid_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115

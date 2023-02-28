@@ -61,10 +61,6 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     BluetoothQti
 
-# Gboard
-PRODUCT_PACKAGES += \
-    Gboard
-
 # Google Photos
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
@@ -149,8 +145,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
