@@ -34,4 +34,6 @@ def AddImage(info, basename, dest):
 def OTA_InstallEnd(info):
   info.script.Print("Patching dtbo images...")
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  info.script.AppendExtra('delete_recursive("/data/resource-cache");')
+  info.script.AppendExtra('delete_recursive("/data/system/package_cache");')
   return
