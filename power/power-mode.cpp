@@ -42,13 +42,14 @@ int open_ts_input() {
 				fd = open(absolute_path, O_RDWR);
 				if (ioctl(fd, EVIOCGNAME(sizeof(name) - 1), &name) > 0) {
 					if (strcmp(name, "atmel_mxt_ts") == 0 ||
-							strcmp(name, "fts") == 0 ||
-							strcmp(name, "fts_521") == 0 ||
-							strcmp(name, "fts_ts") == 0 ||
-							strcmp(name, "ft5x46") == 0 ||
-							strcmp(name, "goodix_ts") == 0 ||
-							strcmp(name, "NVTCapacitiveTouchScreen") == 0 ||
-							strcmp(name, "synaptics_dsx") == 0)
+						strcmp(name, "fts") == 0 ||
+						strcmp(name, "fts_521") == 0 ||
+						strcmp(name, "fts_ts") == 0 ||
+						strcmp(name, "ft5x46") == 0 ||
+						strcmp(name, "goodix_ts") == 0 ||
+						strcmp(name, "NVTCapacitiveTouchScreen") == 0 ||
+						strcmp(name, "NVT_ts") == 0 ||
+						strcmp(name, "synaptics_dsx") == 0)
 						break;
 				}
 
@@ -89,9 +90,9 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 
 bool setDeviceSpecificMode(Mode type, bool enabled) {
 	switch (type) {
-		case Mode::DOUBLE_TAP_TO_WAKE: 
+		case Mode::DOUBLE_TAP_TO_WAKE:
                 case Mode::LOW_POWER:
-                    ::android::base::WriteStringToFile(enabled ? "Y" : "N", BATTERY_SAVER_NODE, true);
+                ::android::base::WriteStringToFile(enabled ? "Y" : "N", BATTERY_SAVER_NODE, true);
 			int fd = open_ts_input();
 			if (fd == -1) {
 				LOG(WARNING)
@@ -109,7 +110,6 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
 		default:
 			return false;
 	}
-}
 
 }  // namespace impl
 }  // namespace power
