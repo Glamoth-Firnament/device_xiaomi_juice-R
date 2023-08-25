@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+include $(LOCAL_PATH)/properties.mk
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
@@ -157,6 +158,3 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon
-
--include $(LOCAL_PATH)/product_prop.mk
--include $(LOCAL_PATH)/system_prop.mk
