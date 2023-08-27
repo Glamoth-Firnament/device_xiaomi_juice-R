@@ -112,7 +112,8 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-include $(LOCAL_PATH)/properties.mk
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
