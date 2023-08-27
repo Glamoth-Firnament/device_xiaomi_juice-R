@@ -70,17 +70,19 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.enable.sglscale=1 \
     debug.mdpcomp.logs=0 \
     debug.sf.recomputecrop=0 \
-    ro.surface_flinger.running_without_sync_framework=true \
-    ro.surface_flinger.use_context_priority=true \
-    ro.surface_flinger.has_wide_color_display=false \
-    ro.surface_flinger.max_virtual_display_dimension=4096 \
-    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     debug.sf.disable_backpressure=1 \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.disable_offline_rotator=1 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
     debug.sf.enable_advanced_sf_phase_offset=1 
+    
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.running_without_sync_framework=true \
+    ro.surface_flinger.use_context_priority=true \
+    ro.surface_flinger.has_wide_color_display=false \
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true 
     
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
