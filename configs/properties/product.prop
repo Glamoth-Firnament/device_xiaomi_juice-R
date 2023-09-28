@@ -2,6 +2,9 @@
 persist.sys.sf.disable_blurs=1
 ro.surface_flinger.supports_background_blur=1
 
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
@@ -13,6 +16,9 @@ dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
+
+# Disable Skia Tracing
+debug.hwui.skia_atrace_enabled=false
 
 # FUSE Passthrough
 persist.sys.fuse.passthrough.enable=true
@@ -40,6 +46,16 @@ ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.max_virtual_display_dimension=4096 
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+
+# Radio Perf
+# RIL Battery Saving off
+persist.vendor.radio.add_power_save=0
+
+# Printk
+persist.vendor.console.silent.config=1
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1

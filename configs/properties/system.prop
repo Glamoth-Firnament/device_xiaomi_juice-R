@@ -1,3 +1,9 @@
+# Async MTE on system_server
+arm64.memtag.process.system_server=off
+
+# Blur
+ro.launcher.blur.appLaunch=0
+
 # Bluetooth
 persist.service.btui.use_aptx=1
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
@@ -10,6 +16,16 @@ vendor.bluetooth.soc=cherokee
 
 # Charger
 ro.charger.enable_suspend=true
+
+# Camera
+log.tag.CHIUSECASE=ERROR
+
+# Color Mode
+persist.sys.sf.color_mode=9
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
+vendor.display.qdcm.disable_factory_mode=1
+vendor.display.qdcm.mode_combine=1
 
 # IMS
 persist.dbg.ims_volte_enable=1
