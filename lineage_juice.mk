@@ -17,4 +17,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
 
+# I hate gapps
+WITH_GAPPS := false
+WITH_GMS := false
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
