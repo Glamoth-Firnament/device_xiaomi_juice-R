@@ -21,4 +21,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 WITH_GAPPS := false
 WITH_GMS := false
 
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.cr.maintainer=Scaledzdn. 
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
