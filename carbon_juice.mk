@@ -7,7 +7,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common carbon stuff.
-$(call inherit-product, vendor/carbon/config/common_full_phone.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 
 # Device identifier. This must come after all inclusions.
