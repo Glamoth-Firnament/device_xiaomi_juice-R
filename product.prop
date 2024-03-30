@@ -22,8 +22,6 @@ ro.sf.blurs_are_expensive=1
 ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
 ro.ril.disable.power.collapse=0
-power.saving.mode=1
-pm.sleep_mode=1
 
 # DRM
 drm.service.enabled=true
