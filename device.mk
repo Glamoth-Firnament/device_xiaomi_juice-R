@@ -152,6 +152,25 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_juice
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    cnss-daemon \
+    VibratorService \
+    libsensor-displayalgo \
+    TelephonyProvider \
+    DPMJ \
+    chatty \
+    libsensor-parseRGB \
+    TaskPersister \
+    FEED \
+    servicemanager \
+    vendor.qti.vibrator
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_PROPERTY_OVERRIDES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),persist.log.tag.$(tag)=S)
+endif
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
