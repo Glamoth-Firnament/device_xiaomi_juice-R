@@ -172,6 +172,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    cnss-daemon \
+    VibratorService \
+    libsensor-displayalgo \
+    TelephonyProvider \
+    DPMJ \
+    chatty \
+    libsensor-parseRGB \
+    TaskPersister \
+    FEED \
+    servicemanager \
+    vendor.qti.vibrator
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_PROPERTY_OVERRIDES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),persist.log.tag.$(tag)=S)
+endif
+
 # Vendor Overlay
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
