@@ -50,6 +50,9 @@ persist.vendor.ims.disableQXDMLogs=1
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
+# RIL Battery Saving off
+persist.vendor.radio.add_power_save=0
+
 # Media
 ro.config.vc_call_vol_steps=11
 ro.config.media_vol_steps=32
