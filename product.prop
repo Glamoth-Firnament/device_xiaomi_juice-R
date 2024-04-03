@@ -47,6 +47,9 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1 
 persist.vendor.ims.disableQXDMLogs=1
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
