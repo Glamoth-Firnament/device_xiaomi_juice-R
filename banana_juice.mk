@@ -11,15 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common corvusOS stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+# Inherit some common bananaOS stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_juice
+PRODUCT_NAME := banana_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
