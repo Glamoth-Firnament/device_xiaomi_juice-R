@@ -11,5 +11,5 @@
 <resources>
     <string name="config_fpsInfoSysNode">/sys/class/drm/sde-crtc-0/measured_fps</string>
 
-    <string name="xd_maintainer">Darknius ft. OhMyVenyx</string>
+    <string name="xd_maintainer">scaledzdn.</string>
 </resources>
