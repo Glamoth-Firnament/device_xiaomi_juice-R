@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_juice.mk
+    $(LOCAL_DIR)/havoc_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_juice-user \
-    spark_juice-userdebug \
-    spark_juice-eng
+    havoc_juice-user \
+    havoc_juice-userdebug \
+    havoc_juice-eng
