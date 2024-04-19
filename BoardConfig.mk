@@ -62,23 +62,6 @@ TARGET_USES_HWC2 := true
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Dex
-ifeq ($(HOST_OS),linux)
-    ifneq ($(TARGET_BUILD_VARIANT),eng)
-        ifeq ($(WITH_DEXPREOPT),)
-            WITH_DEXPREOPT := true
-            WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-        endif
-    endif
-endif
-DONT_DEXPREOPT_PREBUILTS := true
-USE_DEX2OAT_DEBUG := true
-WITH_DEXPREOPT_DEBUG_INFO := false
-ART_BUILD_TARGET_NDEBUG := true
-ART_BUILD_TARGET_DEBUG := false
-ART_BUILD_HOST_NDEBUG := true
-ART_BUILD_HOST_DEBUG := false
-
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
