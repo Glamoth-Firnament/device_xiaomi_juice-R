@@ -62,6 +62,9 @@ ro.vendor.perf.scroll_opt=true
 # System
 persist.sys.binary_xml=false
 
+# Disable RIL powersaving
+persist.vendor.radio.add_power_save=0
+
 # Charger
 ro.charger.enable_suspend=true
 persist.vendor.quick.charge=1
