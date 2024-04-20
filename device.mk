@@ -70,7 +70,6 @@ ifeq ($(HOST_OS),linux)
         endif
     endif
 endif
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 DONT_DEXPREOPT_PREBUILTS := true
 USE_DEX2OAT_DEBUG := true
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
@@ -80,9 +79,6 @@ ART_BUILD_TARGET_NDEBUG := true
 ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep 
 
 # Google Photos
 PRODUCT_COPY_FILES += \
