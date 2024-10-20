@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_juice.mk
+    $(LOCAL_DIR)/carbon_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_juice-user \
-    xdroid_juice-userdebug \
-    xdroid_juice-eng
+    carbon_juice-user \
+    carbon_juice-userdebug \
+    carbon_juice-eng
